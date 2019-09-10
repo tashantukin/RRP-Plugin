@@ -13,7 +13,6 @@ $customFieldPrefix = getCustomFieldPrefix();
 $url = $baseUrl . '/api/v2/marketplaces/';
 $marketplaceInfo = callAPI("GET", null, $url, false);
 $url = $baseUrl . '/api/developer-packages/custom-fields?packageId=' . getPackageID();
-//rl = $baseUrl . '/api/v2/packages/' . getPackageID(). '/custom-field-definitions/';
 $packageCustomFields = callAPI("GET", null, $url, false);
 
 $rrp_status = '';
